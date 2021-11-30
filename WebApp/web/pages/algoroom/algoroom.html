@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Evonati</title>
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+            rel="stylesheet"
+    />
+    <script src="algoroom.js"></script>
+    <link rel="stylesheet" href="algoroom.css">
+</head>
+<body>
+<header class="header" id="head">
+    <nav class="nav">
+
+
+        <a class="nav__link" href="#"  id="main-logo" >
+            <img
+                    src="../../img/evonati.png"
+                    onclick="window.location.replace('../../index.html')"
+                    alt="evonati"
+                    id="evonati"
+            />
+        </a>
+
+        <ul class="nav__btns">
+
+            <form action="../../pages/fileroom/fileroom.html">
+            <li>
+                <label for="back" class="btn__look btn2">Back</label>
+                <input id="back" href="../../fileroom/fileroom.html" type="submit" style="position: fixed; top: -100em">
+            </li>
+            </form>
+            <li class="nav__item">
+                <a class="btn__look" href="../../chat/logout"
+                >Logout</a
+                >
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="row">
+    <div class="column--1">
+        <div>
+            <h4>
+                <span class="highlight">Online</span>
+            </h4>
+
+            <div class="input">
+                <!-- place holder to show the users list -->
+                <ul id="userslist"></ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="column--2">
+        <div>
+
+            <p>Initial population:</p>
+            <form id="Population">
+            <input name="population" placeholder="initial population" type="text" />
+                <input type="submit">
+            </form>
+            <p>Elitism:</p>
+            <form id="Elitism">
+                <input name="elitism" placeholder="Elitism" type="text" />
+                <input type="submit">
+            </form>
+        </div>
+        <br>
+        <form>
+        <input class="Selection" id="Trunction" name="Trunction" type="button" value="Trunction">
+        <input class="Selection"id="Rw" type="button" name="Roulette Wheel" value="Roulette Wheel">
+        <input class="Selection" id="Tournament"  name="Tournament" type="button" value="Tournament">
+        </form>
+
+        <form id="mutation">
+
+            <br>
+            <br>
+            <div>
+                <input name="Flipping" type="checkbox" id="mutation1" value="Flipping">
+                <label for="mutation1"> Flipping</label>
+            <select id="component" name="component">
+                <option value="Days">Days</option>
+                <option value="Hours">Hours</option>
+                <option value="Subjects">Subjects</option>
+                <option value="Classes">Classes</option>
+                <option value="Teachers">Teachers</option>
+            </select>
+
+
+            <input name="tupples" placeholder="Tupples (0-20)" type="text" />
+            <input name="prob" placeholder="Probability (0-1)" type="text" />
+            </div>
+            <div>
+                <input name="Sizer" type="checkbox" id="mutation2" value="Sizer">
+                <label for="mutation2"> Sizer </label>
+                <select name=component2 id="component2">
+                    <option value="Days">Days</option>
+                    <option value="Hours">Hours</option>
+                    <option value="Subjects">Subjects</option>
+                    <option value="Classes">Classes</option>
+                    <option value="Teachers">Teachers</option>
+                </select>
+
+                <input name="tupples2" placeholder="Tupples (0-20)" type="text" />
+                <input name="prob2" placeholder="Probability (0-1)" type="text" />
+            </div>
+                <input type="submit">
+        <br><br><br>
+        </form>
+        <form id="Crossover">
+            <select name="Cover">
+                <option name="Aspect Oriented" value="Aspect Oriented">Aspect Oriented</option>
+                <option name="Daytime Oriented" value="Daytime Oriented">Daytime Oriented</option>
+            </select>
+            <input name="cutting-pts" placeholder="Cutting points (0-10)" type="text" />
+            <input type="submit">
+        </form>
+        <br><br>
+        <input name="Generations" placeholder="Generations (0-1000)" type="text" />
+        <input name="Fitness" placeholder="Fitness (0-100)" type="text" />
+        <input name="Time" placeholder="Enter Time" type="text" />
+    </div>
+    <div class="column--3">
+        <div class="text-block">
+				<span id="pdata" style="white-space: pre-wrap" data-bind="text: copyright"></span>
+        </div>
+        <form>
+            <input class="Run" id="Run" name="Run" type="button" value="Run">
+        </form>
+        <div class="input">
+
+            Fitness:
+            <ul id="fitness"></ul>
+
+            Generation:
+            <ul id="generation"></ul>
+        </div>
+    </div>
+
+</div>
+<div align="center">
+
+
+
+</div>
+
+</body>
+</html>
+
+<!--
+
+<table id="data">
+	<tr>
+		<th>Company</th>
+		<th>Contact</th>
+		<th>Country</th>
+	</tr>
+	<tr>
+		<td>Alfreds Futterkiste</td>
+		<td>Maria Anders</td>
+		<td>Germany</td>
+	</tr>
+	<tr>
+		<td>Berglunds snabbköp</td>
+		<td>Christina Berglund</td>
+		<td>Sweden</td>
+	</tr>
+	<tr>
+		<td>Centro comercial Moctezuma</td>
+		<td>Francisco Chang</td>
+		<td>Mexico</td>
+	</tr>
+	<tr>
+		<td>Ernst Handel</td>
+		<td>Roland Mendel</td>
+		<td>Austria</td>
+	</tr>
+	<tr>
+		<td>Island Trading</td>
+		<td>Helen Bennett</td>
+		<td>UK</td>
+	</tr>
+	<tr>
+		<td>Königlich Essen</td>
+		<td>Philip Cramer</td>
+		<td>Germany</td>
+	</tr>
+	<tr>
+		<td>Laughing Bacchus Winecellars</td>
+		<td>Yoshi Tannamuri</td>
+		<td>Canada</td>
+	</tr>
+	<tr>
+		<td>Magazzini Alimentari Riuniti</td>
+		<td>Giovanni Rovelli</td>
+		<td>Italy</td>
+	</tr>
+	<tr>
+		<td>North/South</td>
+		<td>Simon Crowther</td>
+		<td>UK</td>
+	</tr>
+	<tr>
+		<td>Paris spécialités</td>
+		<td>Marie Bertrand</td>
+		<td>France</td>
+	</tr>
+</table>

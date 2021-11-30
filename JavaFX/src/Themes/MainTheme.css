@@ -1,0 +1,269 @@
+.root {
+
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-font-family: "Open Sans", sans-serif;
+    -fx-background-color: #ffffff;
+}
+
+.table-view{
+    -fx-background-color: white;
+    -fx-alignment: center;
+    -fx-border-color: derive(black, -60%);
+}
+
+.scroll-pane{
+    -fx-background-color:transparent;
+}
+
+.tab {
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+    -fx-background-color: #c0c0c0;
+   /* -fx-border-color: #ECECEC; */
+}
+
+.tab-pane{
+    -fx-tab-min-width: 157;
+    -fx-tab-max-width: 157;
+    -fx-min-height: 100;
+    -fx-tab-max-height: 100;
+
+}
+
+
+.tab:selected{
+    -fx-tab-min-width: 135;
+    -fx-tab-max-width: 135;
+    -fx-min-height: 100;
+    -fx-tab-max-height: 100;
+    -fx-background-color: #4CB4A3;
+}
+
+.tab:selected .tab-label{
+    -fx-text-fill: #FFFFFF;
+}
+
+.tab:hover{
+    -fx-background-color: #4CB4A3;
+}
+
+.slider{
+
+}
+
+
+.grid-pane{
+    -fx-background-color: #4CB4A3;
+}
+
+.grid-pane Line{
+    -fx-stroke   : White;
+}
+
+.grid-pane .label {
+    -fx-font-weight: 600;
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+    -fx-max-width: Infinity;
+}
+
+.header-section {
+    -fx-padding: 10px;
+    -fx-font-size: 20px;
+    -fx-background-color: #4CB4A3;
+    -fx-border-width: 1;
+    -fx-border-color:#FFFFFF;
+}
+
+.header-section Label {
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10px;
+}
+
+
+.sidebar-section {
+    -fx-min-width: 200px;
+    -fx-pref-width: 200px;
+    -fx-max-width: 200px;
+    -fx-border-width: 1;
+    -fx-border-color: transparent #E8E8E8 transparent transparent;
+}
+
+.sidebar-section Label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #4CB4A3;
+    -fx-padding: 10 15 10 15;
+    -fx-border-width: 1;
+    -fx-border-color: #E8E8E8 transparent #E8E8E8 #E8E8E8;
+    -fx-min-width: 198px;
+    -fx-pref-width: 198px;
+    -fx-max-width: 198px;
+}
+.sidebar-section .label:hover {
+    -fx-background-color: #4CB4A3;
+    -fx-text-fill: #FFFFFF;
+
+}
+
+
+.sidebar-section .label:focused {
+    -fx-background-color: #FF0033;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #FFFFFF;
+}
+
+.sidebar-section .label:focused:hover {
+    -fx-background-color: #4CB4A3;
+    -fx-text-fill: #FFFFFF;
+}
+
+.sidebar-section-right {
+    -fx-pref-width: 170px;
+    -fx-border-width: 1;
+    -fx-border-color: #E8E8E8 #E8E8E8 #E8E8E8 #E8E8E8
+}
+
+
+.sidebar-section-right .label{
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+    -fx-min-width: 75px;
+    -fx-pref-width: 75px;
+    -fx-max-width: 75px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+}
+
+.progress-bar{
+    -fx-accent: #4CB4A3;
+}
+
+.progress-indicator{
+    -fx-position-shape: false;
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+}
+
+.content-section {
+    -fx-padding: 10 20 10 20;
+    -fx-wrap-text: true;
+
+}
+
+#content-header {
+    -fx-font-size: 18px;
+    -fx-padding: 0 0 10 0;
+    -fx-font-weight: 700;
+}
+
+
+#footer-section {
+    -fx-alignment: center;
+    -fx-padding: 10 10 10 10;
+    -fx-border-width: 1;
+    -fx-border-color: #E8E8E8 transparent transparent transparent;
+}
+
+.bottom-section {
+
+
+    -fx-border-width: 1.25;
+    -fx-border-color: #E8E8E8;
+}
+
+
+.running-pane .toggle-button{
+
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+    -fx-border-color:  #ECECEC;
+    -fx-min-width: 110px;
+    -fx-pref-width: 110px;
+    -fx-max-width: 110px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+}
+
+.running-pane .combo-box{
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+    -fx-border-color:  #ECECEC;
+    -fx-min-width: 110px;
+    -fx-pref-width: 110px;
+    -fx-max-width: 110px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+}
+
+.settings-pane .text-field{
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+    -fx-border-color:  #ECECEC;
+    -fx-min-width: 110px;
+    -fx-pref-width: 110px;
+    -fx-max-width: 110px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+}
+
+
+
+.slider{
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+    -fx-text-fill: BLACK;
+}
+
+.running-pane .label{
+    -fx-min-width: 110;
+    -fx-max-width: 110;
+}
+.running-pane .text-area{
+    -fx-font-size: 20px;
+    -fx-min-width: 120;
+}
+
+.running-pane .button{
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+    -fx-border-color:  #ECECEC;
+    -fx-min-width: 110px;
+    -fx-pref-width: 110px;
+    -fx-max-width: 110px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+}
+
+.combo-box {
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+.combo-box>.list-cell {
+    -fx-alignment: center;
+    -fx-font-size: 14px
+}
+
+.button {
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+}
+
+.toggle-button {
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #c0c0c0;
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+    -fx-border-color:  #ECECEC;
+}
