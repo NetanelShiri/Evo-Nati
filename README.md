@@ -41,7 +41,7 @@ The system is responsive & cross-platform
 ## Installation
 #### Tomcat
 
-You can use Tomcat and add the WEB_war.war file:
+You can use Tomcat and add the WebApp_war.war file:
 
     1. Install Tomcat on your system.
     2. Download the war file from the out/artifacts/ folder.
