@@ -1,7 +1,8 @@
 
 # Evo-Nati
 
-My java time table application using genetics algorithms. 
+My java time table application using genetics algorithms.
+
 The application will create the best time table for you with the conditions you choose.
 
 - JavaFX Application
