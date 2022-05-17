@@ -6,7 +6,7 @@ My java time table application using genetics algorithms.
 The application will create the best time table for you with the conditions you choose.
 
 - JavaFX Application
-- JavaScript Web Application
+- JavaScript Web Application ( Multiplie Accounts can login and see all logged in users )
 
 ```bash
 Java HTML & CSS JavaScript JQuery XML Tomcat Servlets Java FX
